@@ -55,22 +55,16 @@
 
 2. top100
 
-- 맨 처음으로 한국 조
+- 맨 처음으로 한국 내 인기 top100으로 내림차순으로 출력
 
-lib/
-├── main.dart
-├── home.dart                   # 메인 홈 화면 (자주 듣는 곡, 추천 곡)
-├── top100_screen.dart          # Top100 인기곡 리스트
-├── playlist_screen.dart        # 내 재생목록 화면
-├── search.dart                 # 검색 페이지
-├── components/
-│   ├── top_nav_bar.dart        # 상단 네비게이션 바
-│   ├── bottom_nav_bar.dart     # 하단 네비게이션 바
-│   └── mini_player_bar.dart    # 하단 미니 플레이어 (재생, 일시정지 등)
-├── models/
-│   └── song_model.dart         # 곡 정보 데이터 모델
-├── services/
-│   └── recommendation_service.dart # 추천 로직 관련
-├── firebase/                   # Firestore 연동용
-│   └── firebase_options.dart
+- 컨테이너 박스 내에 왼쪽 상단에 카테고리 버튼을 만들고 장르/국가 별로 지정 후 내림차순으로 출력
 
+- 곡 선택 후 지정 곡 기준으로 하나씩 밑으로 재생되게 출력
+
+3. 내 재생목록
+
+- 즐겨찾기를 만들어서 가장 상단에 위치하도록 지정
+
+- 마지막으로 선택했던 재생목록이 상단(즐겨찾기 밑으로)으로 올려서 내림차순으로 정렬
+
+- 오른쪽 상단에 새 재생목록으로 추가하기 버튼 구현
