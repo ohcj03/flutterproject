@@ -55,16 +55,22 @@
 
 2. top100
 
-- 맨 처음으로 한국 내 인기 top100을 출력하게 만들고 컨테이너 타입 안에 왼쪽 상단 카테고리 지정 버튼 만듦
+- 맨 처음으로 한국 조
 
-- top100에서 곡 재생 시 그 곡을 기준으로 아래로 하나씩 재생하도록 설계하기
-
-
-
-3. 내 재생목록
-
-- 오른쪽 상단에 새 재생목록 추가 기능의 버튼 삽입
-
-- 즐겨찾기 지정한 재생목록들을 우선적으로 보여주고 그 이후에 가장 최근에 재생했던 재생목록 별로 내림차순으로 나열
-
+lib/
+├── main.dart
+├── home.dart                   # 메인 홈 화면 (자주 듣는 곡, 추천 곡)
+├── top100_screen.dart          # Top100 인기곡 리스트
+├── playlist_screen.dart        # 내 재생목록 화면
+├── search.dart                 # 검색 페이지
+├── components/
+│   ├── top_nav_bar.dart        # 상단 네비게이션 바
+│   ├── bottom_nav_bar.dart     # 하단 네비게이션 바
+│   └── mini_player_bar.dart    # 하단 미니 플레이어 (재생, 일시정지 등)
+├── models/
+│   └── song_model.dart         # 곡 정보 데이터 모델
+├── services/
+│   └── recommendation_service.dart # 추천 로직 관련
+├── firebase/                   # Firestore 연동용
+│   └── firebase_options.dart
 
